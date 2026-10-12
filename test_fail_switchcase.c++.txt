@@ -1,0 +1,8 @@
+program fail1 {
+    declare x; 
+    
+    // Missing 'when' or 'default' keyword inside switchcase
+    switchcase 
+        print x;
+    default: print x;
+}

@@ -1,0 +1,28 @@
+program DeepNesting {
+    declare globalVar;
+
+    // Εξωτερική Συνάρτηση
+    function outerFunc(in a, inout b) {
+        declare tempOuter;
+
+        // Εσωτερική (Φωλιασμένη) Συνάρτηση
+        function innerFunc(in c) {
+            if (c > 0) {
+                return c * 2
+            } else {
+                return 0
+            }
+        } // <- Τέλος της innerFunc
+
+        // Κλήση της εσωτερικής μέσα στην εξωτερική!
+        tempOuter := innerFunc(in a) + 5;
+        b := tempOuter;
+        return b
+    } // <- Τέλος της outerFunc
+
+    globalVar := 10;
+    
+    // Κλήση της εξωτερικής συνάρτησης μέσα σε μαθηματική έκφραση
+    globalVar := outerFunc(in 5 + 5, inout globalVar) * 2;
+    print globalVar
+}
