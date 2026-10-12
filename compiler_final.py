@@ -1,6 +1,3 @@
-#Tompoulidis Kallinikos AM 5368
-#Spyros Samoilis  AM 5344 
-
 import sys
 import os
 
