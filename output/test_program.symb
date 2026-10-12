@@ -1,0 +1,65 @@
+=== Function: anotheruseless ===
+Scope Level: 3, Offset: 16
+Entities:
+  Parameter: _ret_, Mode: RET, Offset: 12
+
+=== Function: useless ===
+Scope Level: 2, Offset: 24
+Entities:
+  Parameter: _ret_, Mode: RET, Offset: 12
+  Function: anotheruseless, StartQuad: 1, FrameLength: 16
+  TempVar: T_1, Offset: 16
+  TempVar: T_2, Offset: 20
+
+=== Function: increase ===
+Scope Level: 1, Offset: 32
+Entities:
+  Parameter: a, Mode: in, Offset: 12
+  Parameter: b, Mode: inout, Offset: 16
+  Parameter: _ret_, Mode: RET, Offset: 20
+  Function: useless, StartQuad: 4, FrameLength: 24
+  TempVar: T_3, Offset: 24
+  TempVar: T_4, Offset: 28
+
+=== Main Program ===
+Scope Level: 0, Offset: 156
+Entities:
+  Variable: a, Offset: 12
+  Variable: b, Offset: 16
+  Variable: c, Offset: 20
+  Function: increase, StartQuad: 9, FrameLength: 32
+    Arguments: a(in), b(inout)
+  TempVar: T_5, Offset: 24
+  TempVar: T_6, Offset: 28
+  TempVar: T_7, Offset: 32
+  TempVar: T_8, Offset: 36
+  TempVar: T_9, Offset: 40
+  TempVar: T_10, Offset: 44
+  TempVar: T_11, Offset: 48
+  TempVar: T_12, Offset: 52
+  TempVar: T_13, Offset: 56
+  TempVar: T_14, Offset: 60
+  TempVar: T_15, Offset: 64
+  TempVar: T_16, Offset: 68
+  TempVar: T_17, Offset: 72
+  TempVar: T_18, Offset: 76
+  TempVar: T_19, Offset: 80
+  TempVar: T_20, Offset: 84
+  TempVar: T_21, Offset: 88
+  TempVar: T_22, Offset: 92
+  TempVar: T_23, Offset: 96
+  TempVar: T_24, Offset: 100
+  TempVar: T_25, Offset: 104
+  TempVar: T_26, Offset: 108
+  TempVar: T_27, Offset: 112
+  TempVar: T_28, Offset: 116
+  TempVar: T_29, Offset: 120
+  TempVar: T_30, Offset: 124
+  TempVar: T_31, Offset: 128
+  TempVar: T_32, Offset: 132
+  TempVar: T_33, Offset: 136
+  TempVar: T_34, Offset: 140
+  TempVar: T_35, Offset: 144
+  TempVar: T_36, Offset: 148
+  TempVar: T_37, Offset: 152
+
